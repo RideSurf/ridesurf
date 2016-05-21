@@ -26,7 +26,9 @@ CREATE TABLE trip (
     id serial,
     name varchar, -- human-readable, non-unique name
     start_time timestamp,
-    end_time timestamp
+    end_time timestamp,
+    committed boolean, -- true if driver committed
+    active boolean -- false if canceled or completed
 );
 
 CREATE TABLE trip_member (
