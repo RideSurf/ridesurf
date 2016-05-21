@@ -1,7 +1,7 @@
 -- Database creation script
 -- 
 
---DROP DATABASE ridesurf;
+DROP DATABASE ridesurf;
 CREATE DATABASE ridesurf;
 
 \c ridesurf
