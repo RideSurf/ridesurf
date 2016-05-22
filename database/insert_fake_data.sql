@@ -37,7 +37,7 @@ INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Tonga Ri
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Pioneer Camp Trailhead','Pioneer Camp Trailhead',48.679725,-121.897202);
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Turtleback Mountain South Trailhead','Turtleback Mountain South Trailhead',48.641083,-122.977286);
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Orcas Island Eclipse Charters','Orcas Island Eclipse Charters',48.60493,-122.943223);
-INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Steven's Pass','Steven's Pass',47.744331,-121.090034);
+INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Stevens Pass','Stevens Pass',47.744331,-121.090034);
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Peshastin Pinnacles State Park','Peshastin Pinnacles State Park',47.550326,-120.589054);
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Steamboat Rock State Park','Steamboat Rock State Park',47.861185,-119.027663);
 INSERT INTO location (private, name, address, lat, lon) VALUES (False, 'Duthie Hill Park','Duthie Hill Park',47.574604,-121.9798);
