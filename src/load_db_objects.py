@@ -1,13 +1,14 @@
 import psycopg2
 
 class Profile(object):
-    def __init__(self, id, username, firstname, lastname, email, car_type):
+    def __init__(self, id, username, firstname, lastname, email, car_type, car_size):
         self.id = id
         self.username = username
         self.firstname = firstname
         self.lastname = lastname
         self.email = email
         self.car_type = car_type
+        self.car_size = car_size
         self.categories = []
         self.main_locations = {}
         self.other_locations = {}
@@ -42,7 +43,6 @@ class Trip(object):
         self.categories = []
         self.stops = []
         self.members = []
-
 
 def connect():
     conn_string = "dbname='ridesurf'"

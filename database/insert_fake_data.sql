@@ -76,10 +76,15 @@ INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (5, 9,
 INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (6, 10, 'home', True); 
 INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (7, 11, 'home', True); 
 
-INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Whistler', '2016-05-28 09:00:00', '2016-05-28 17:00:00', '', True, False, False, True)
-INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Hike Mount Si!', '2016-05-28 10:00:00', '2016-05-28 18:00:00', '', True, False, False, True)
-INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Whistler', '2016-05-28 07:00:00', '2016-05-29 18:00:00', '', True, False, False, True)
-INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('skiing at stevens', '2016-05-29 06:00:00', '2016-05-29 19:00:00', '', False, False, False, True)
+INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Whistler', '2016-05-28 09:00:00', '2016-05-28 17:00:00', '', True, False, False, True);
+INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Hike Mount Si!', '2016-05-28 10:00:00', '2016-05-28 18:00:00', '', True, False, False, True);
+INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('Whistler', '2016-05-28 07:00:00', '2016-05-29 18:00:00', '', True, False, False, True);
+INSERT INTO trip (name, start_time, end_time, description, dogs_ok, committed, completed, active) VALUES ('skiing at stevens', '2016-05-29 06:00:00', '2016-05-29 19:00:00', '', False, False, False, True);
 
-INSERT INTO trip_stop
+INSERT INTO trip_stop (trip_id, location_id, position) VALUES (1, 8, 0);
+INSERT INTO trip_stop (trip_id, location_id, position) VALUES (1, 1, 1);
+INSERT INTO trip_stop (trip_id, location_id, position) VALUES (2, 9, 0);
+INSERT INTO trip_stop (trip_id, location_id, position) VALUES (2, 10, 1);
+INSERT INTO trip_stop (trip_id, location_id, position) VALUES (2, 2, 2);
+
 

@@ -1,7 +1,7 @@
 -- Database creation script
 -- 
 
-DROP DATABASE ridesurf;
+--DROP DATABASE ridesurf;
 CREATE DATABASE ridesurf;
 
 \c ridesurf
@@ -12,7 +12,8 @@ CREATE TABLE profile (
     firstname varchar not null,
     lastname varchar not null,
     email varchar not null,
-    car_type varchar
+    car_type varchar,
+    car_size integer
 );
 
 CREATE TABLE profile_review (
@@ -50,7 +51,7 @@ CREATE TABLE trip_member (
     -- do we specify driver here or in trip?
 );
 
-CREATE TABLE trip_stops (
+CREATE TABLE trip_stop (
     trip_id integer not null,
     location_id integer not null,
     position integer not null -- 0 for start, 1 for first stop, ... maybe -1 for end?
