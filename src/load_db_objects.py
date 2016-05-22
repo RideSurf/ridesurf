@@ -40,7 +40,8 @@ class Trip(object):
         self.completed = completed
         self.active = active
         self.categories = []
-        self.locations = []
+        self.stops = []
+        self.members = []
 
 
 def connect():
@@ -77,6 +78,21 @@ if __name__ == '__main__':
     for record in records:
         locations[record[0]].categories.append(categories[record[1]])
         
+    cursor.execute("select * from trip_category")
+    records = cursor.fetchall()
+    for record in records:
+        trips[record[0]].categories.append(categories[record[1]])
+        
+    cursor.execute("select * from trip_member")
+    records = cursor.fetchall()
+    for record in records:
+        trips[record[0]].members.append(profiles[record[1]])
+        
+    cursor.execute("select * from trip_stop order by position asc")
+    records = cursor.fetchall()
+    for record in records:
+        trips[record[0]].stops.append(locations[record[1]])
+        
     cursor.execute("select * from profile_location where main = True")
     records = cursor.fetchall()
     for record in records:
@@ -87,6 +103,9 @@ if __name__ == '__main__':
     for record in records:
         profiles[record[0]].other_locations[record[2]] = locations[record[1]]
 
+    # TODO
+    # location_review
+    # profile_review
     '''
     for profile in profiles.values():
         print profile.username
