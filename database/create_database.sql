@@ -91,4 +91,4 @@ INSERT INTO category (name) VALUES ('snowboarding');
 INSERT INTO category (name) VALUES ('snowshoeing');
 INSERT INTO category (name) VALUES ('surfing');
 INSERT INTO category (name) VALUES ('urbaneering');
-
+INSERT INTO category (name) VALUES ('whale watching');
