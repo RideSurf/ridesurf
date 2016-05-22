@@ -40,6 +40,7 @@ class Trip(object):
         self.completed = completed
         self.active = active
         self.categories = []
+        self.locations = []
 
 
 def connect():
