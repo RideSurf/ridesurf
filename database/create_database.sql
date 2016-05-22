@@ -1,7 +1,7 @@
 -- Database creation script
 -- 
 
-DROP DATABASE ridesurf;
+--DROP DATABASE ridesurf;
 CREATE DATABASE ridesurf;
 
 \c ridesurf
@@ -38,6 +38,7 @@ CREATE TABLE trip (
     start_time timestamp,
     end_time timestamp,
     committed boolean, -- true if driver committed
+    completed boolean, -- true if people went on trip, for DS purposes
     active boolean -- false if canceled or completed
 );
 
@@ -47,13 +48,14 @@ CREATE TABLE trip_member (
     -- do we specify driver here or in trip?
 );
 
-CREATE TABLE trip_location (
+CREATE TABLE trip_stops (
     trip_id integer not null,
     location_id integer not null,
     position integer not null -- 0 for start, 1 for first stop, ... maybe -1 for end?
 );
 
 CREATE TABLE location (
+    id serial,
     private boolean not null,
     name varchar not null,
     address varchar not null,
