@@ -42,14 +42,14 @@ INSERT INTO location_category (location_id, category_id) VALUES (1, 6);
 INSERT INTO location_category (location_id, category_id) VALUES (2, 1);
 INSERT INTO location_category (location_id, category_id) VALUES (3, 8);
 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (1, 4, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (2, 5, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (3, 6, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (2, 7, 'work', 0); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (4, 8, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (5, 9, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (6, 10, 'home', 1); 
-INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (7, 11, 'home', 1); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (1, 4, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (2, 5, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (3, 6, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (2, 7, 'work', False); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (4, 8, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (5, 9, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (6, 10, 'home', True); 
+INSERT INTO profile_location (profile_id, location_id, name, main) VALUES (7, 11, 'home', True); 
 
 
 
